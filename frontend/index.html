@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAG Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body, #root { height: 100%; }
+      body { background: #080810; font-family: 'Syne', sans-serif; color: #e2e2ef; }
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #2a2a3f; border-radius: 3px; }
+
+      /* React Flow overrides */
+      .react-flow__background { background: #080810 !important; }
+      .react-flow__controls { bottom: 16px !important; left: 16px !important; }
+      .react-flow__controls-button {
+        background: #12121e !important; border: 1px solid #2a2a3f !important;
+        fill: #888 !important; color: #888 !important;
+      }
+      .react-flow__controls-button:hover { background: #1e1e30 !important; fill: #e2e2ef !important; }
+      .react-flow__minimap { bottom: 16px !important; right: 16px !important; background: #12121e !important; border: 1px solid #2a2a3f !important; border-radius: 8px !important; }
+      .react-flow__edge-path { stroke: #3a3a52 !important; stroke-width: 2 !important; }
+      .react-flow__edge.animated .react-flow__edge-path { stroke: #6366f1 !important; }
+      .react-flow__handle {
+        width: 10px !important; height: 10px !important;
+        background: #3a3a52 !important; border: 2px solid #1e1e30 !important;
+        transition: background .15s !important;
+      }
+      .react-flow__handle:hover { background: #6366f1 !important; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
